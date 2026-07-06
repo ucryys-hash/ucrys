@@ -1,21 +1,21 @@
 const openBtn = document.getElementById("openBtn");
 
-openBtn.addEventListener("click", function () {
+openBtn.addEventListener("click", () => {
 
-document.querySelector(".container").innerHTML = `
+document.querySelector(".card").innerHTML = `
 
-<img src="nina.jpg" class="profile" alt="Nina">
+<img src="nina.jpg" class="photo" alt="Nina">
 
 <h1>Dear Nina ❤️</h1>
 
 <p class="letter">
 
-I don't know if these words are perfect...
+I wasn't trying to make something perfect.
 
-But they are honest.
+I just wanted to make something that was only for you.
 
-Every time I think about you,
-I end up smiling.
+Every time I see your smile,
+it makes the day feel a little brighter.
 
 I love your smile.
 
@@ -25,11 +25,13 @@ I love your laugh.
 
 I love your kindness.
 
-I love the little things that make you... you.
+And I love the little things that make you... you.
 
-Thank you for being such a beautiful part of my thoughts.
+Maybe these are just simple words,
 
-I hope this tiny surprise made you smile.
+but every single one is true.
+
+Thank you for being someone so special.
 
 ❤️
 
@@ -39,11 +41,11 @@ Forever Yours,
 
 </p>
 
-<button id="backBtn">Read Again ❤️</button>
+<button id="againBtn">Read Again ❤️</button>
 
 `;
 
-document.getElementById("backBtn").addEventListener("click", function () {
+document.getElementById("againBtn").addEventListener("click", () => {
 location.reload();
 });
 
