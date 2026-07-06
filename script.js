@@ -1,61 +1,55 @@
 const app = document.getElementById("app");
-const music = document.getElementById("music");
 
 document.getElementById("startBtn").addEventListener("click", () => {
 
-    if (music) {
-        music.play().catch(()=>{});
-    }
+app.innerHTML = `
+<div class="container">
 
-    app.innerHTML = `
-    <section class="hero">
+<img src="nina.jpg" class="profile">
 
-        <div class="glass">
+<h1>Dear Nina ❤️</h1>
 
-            <h2>Dear Nina ❤️</h2>
+<p class="letter">
 
-            <p>
-            I don't know if this little surprise can explain
-            how much I appreciate you...
-            <br><br>
-            But every time you smile,
-            the world feels a little brighter.
-            <br><br>
-            I love your smile,
-            your eyes,
-            your kindness,
-            your laugh,
-            your beautiful heart,
-            and the way you make ordinary moments feel special.
-            <br><br>
-            Thank you for being you.
-            <br><br>
-            — Utpal ❤️
-            </p>
+I don't know if I'm good at expressing my feelings,
 
-            <button id="heartBtn">❤️ One Last Surprise</button>
+but I know one thing...
 
-        </div>
+meeting you has made my days a little happier.
 
-    </section>
-    `;
+Your smile is beautiful.
 
-    document.getElementById("heartBtn").onclick = showFinal;
+Your eyes are beautiful.
+
+Your laugh is beautiful.
+
+Your kindness is beautiful.
+
+And the person you are...
+
+is even more beautiful.
+
+I don't need perfect words.
+
+I just wanted to make something that would remind you
+
+that someone smiles whenever they think of you.
+
+Thank you for being you.
+
+❤️
+
+Forever Yours,
+
+<b>Utpal</b>
+
+</p>
+
+<button onclick="location.reload()">
+Read Again ❤️
+</button>
+
+</div>
+`;
 
 });
-
-function showFinal(){
-
-    app.innerHTML = `
-    <section class="hero">
-
-        <div class="glass">
-
-            <h2>Forever ❤️</h2>
-
-            <p>
-
-            No matter how many websites exist...
-
-            This one will always remind me
-            of the person I made
