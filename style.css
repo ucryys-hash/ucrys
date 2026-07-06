@@ -95,3 +95,10 @@ padding:15px 40px;
 border:none;
 
 border-radius:
+.letter{
+line-height:32px;
+font-size:18px;
+margin-top:20px;
+white-space:pre-line;
+color:#fff;
+}
