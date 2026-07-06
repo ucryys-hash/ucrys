@@ -1,51 +1,61 @@
 const app = document.getElementById("app");
+const music = document.getElementById("music");
 
-app.innerHTML = `
-<div class="card">
+document.getElementById("startBtn").addEventListener("click", () => {
 
-<img src="nina.jpg" class="photo">
+    if (music) {
+        music.play().catch(()=>{});
+    }
 
-<h1>Hey Nina ❤️</h1>
+    app.innerHTML = `
+    <section class="hero">
 
-<p class="text">
-Before you continue...
-<br><br>
-Promise me you'll smile at least once today. 😊
-</p>
+        <div class="glass">
 
-<button id="open">
-Open Surprise ✨
-</button>
+            <h2>Dear Nina ❤️</h2>
 
-</div>
-`;
+            <p>
+            I don't know if this little surprise can explain
+            how much I appreciate you...
+            <br><br>
+            But every time you smile,
+            the world feels a little brighter.
+            <br><br>
+            I love your smile,
+            your eyes,
+            your kindness,
+            your laugh,
+            your beautiful heart,
+            and the way you make ordinary moments feel special.
+            <br><br>
+            Thank you for being you.
+            <br><br>
+            — Utpal ❤️
+            </p>
 
-document.getElementById("open").onclick=function(){
+            <button id="heartBtn">❤️ One Last Surprise</button>
 
-app.innerHTML=`
+        </div>
 
-<div class="card">
+    </section>
+    `;
 
-<h1>❤️ Just One Thing ❤️</h1>
+    document.getElementById("heartBtn").onclick = showFinal;
 
-<p class="text">
+});
 
-I didn't make this website because I know how to code.
+function showFinal(){
 
-I made it because...
+    app.innerHTML = `
+    <section class="hero">
 
-someone special deserves something made with time, not just words.
+        <div class="glass">
 
-😊
+            <h2>Forever ❤️</h2>
 
-</p>
+            <p>
 
-<button id="next">
-Continue →
-</button>
+            No matter how many websites exist...
 
-</div>
-
-`;
-
-};
+            This one will always remind me
+            of the person I made
